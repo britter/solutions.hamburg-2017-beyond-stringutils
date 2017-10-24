@@ -130,7 +130,7 @@ Note:
 Map<String, String> values = singletonMap("customKey", "some value");
 StrSubstitutor strSubstitutor = new StrSubstitutor(values);
 strSubstitutor.replace(
-        "Template with {customKey} and {another:-fallback value}");
+        "Template with ${customKey} and ${another:-fallback value}");
 ```
 
 Results in _"Template with some value and fallback value"_

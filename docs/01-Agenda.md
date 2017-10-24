@@ -9,6 +9,7 @@
 - Apache Commons Components
   - Apache Commons Lang
   - Apache Commons CSV
+  - Apache Commons Collections
   - Apache Commons CLI
 - Q&A
 
