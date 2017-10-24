@@ -85,10 +85,10 @@ private static void assumeAtLeast(JavaVersion version) {
 ... for the common methods in defined in `java.lang.Object`
 
 ```
-public boolean equals(Object that) {
-  if (that == null) return false;
-  if (that == this) return true;
-  if (that.getClass() != this.getClass()) return false;
+public boolean equals(Object o) {
+  if (o == null) return false;
+  if (o == this) return true;
+  if (o.getClass() != this.getClass()) return false;
 
   Person that = (Person) o;
   return new EqualsBuilder().append(this.name, that.name)
